@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Web Study</title>
+	<style type="text/css">
+		html, body { margin: 0; height: 100% }
+		.header { width: 100%; height: 15%;
+					background: yellow }
+		.nav { width: 15%; height: 70%; float: left;
+				background: orange;}
+		.section { width: 70%; height: 70%; float: left;
+				background-color: olivedrab }
+		.aside { width: 15%; height: 70%; float: left;
+				background-color: orange }
+		.footer { width: 100%; height: 15%; clear: both;
+				background-color: plum }
+	</style>
 	<script type="text/javascript">
 		function sayHello(){
 			document.getElementById("clickme").innerHTML="안녕하세요!";
 		}
 	</script>
+	
 </head>
 <body>
-	<a href="#" onclick="sayHello()" id="clickme">눌러 주세요!</a>
+	<header class="header">header</header>
+	<nav class="nav">nav</nav>
+	<section class="section"><p>section</p>
+		<a href="#" onclick="sayHello()" id="clickme">눌러 주세요!</a>
+	</section>
+	<aside class="aside">aside</aside>
+	<footer class="footer">footer</footer>
+	
 </body>
 </html>
